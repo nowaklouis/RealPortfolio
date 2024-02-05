@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+{% import "macros.html.twig" as macros %}
+
+{% block title %}Compétences{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <div class="d-flex justify-content-center my-5">
+        <div>
+            <h1 class="golden text-shadow">Mes compétences: ...en cours
+                <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center my-5">
+        <p class="text-white">"Apprendre le développement web, c'est comme écrire un logiciel infini. Vous apprenez, vous codez, vous résolvez des problèmes, mais la véritable expertise réside dans la reconnaissance que chaque ligne de code n'est 
+        qu'un point de départ. Dans un monde numérique en constante évolution, l'apprentissage est une aventure sans fin. Il faut rester affamé de connaissances, continuer à créer et à innover. Le développement web, c'est une discipline où chaque 
+        site est une nouvelle leçon, chaque bug une opportunité d'amélioration. La clé du succès réside dans une passion inextinguible pour l'apprentissage continu." - Bill Gates</p>
+    </div>
+
+    <div class="d-flex justify-content-evenly flex-wrap">
+        {{ macros.competences("cardhtml.webp", "logo html", "#modalhtml")}}
+        {{ macros.competences("cardcss.png", "logo css", "#modalcss")}}
+        {{ macros.competences("carddocker.png", "logo docker", "#modaldocker")}}
+        {{ macros.competences("cardagile.png", "logo agile", "#modalagile")}}
+        {{ macros.competences("cardbootstrap.png", "logo bootstrap", "#modalbootstrap")}}
+        {{ macros.competences("cardgit.png", "logo git", "#modalgit")}}
+        {{ macros.competences("cardgithub.png", "logo github", "#modalgithub")}}
+        {{ macros.competences("cardjs.png", "logo javascript", "#modaljs")}}
+        {{ macros.competences("cardmysql.png", "logo mysql", "#modalmysql")}}
+        {{ macros.competences("cardphp.png", "logo php", "#modalphp")}}
+        {{ macros.competences("cardcss.phpstorm", "logo phpstorm", "#modalphpstorm")}}
+        {{ macros.competences("cardpwa.webp", "logo pwa", "#modalpwa")}}
+        {{ macros.competences("cardreact.png", "logo react", "#modalreact")}}
+        {{ macros.competences("cardtwig.png", "logo twig", "#modaltwig")}}
+        {{ macros.competences("cardvscode.png", "logo vscode", "#modalvscode")}}
+    </div>
+</div>
+
+<!-- modal -->
+
+{{ macros.modalcompetences("testtiter", "testdescription", "modalhtml")}}
+{{ macros.modalcompetences("titer", "cription", "modal")}}
+
+{% endblock %}
+
+

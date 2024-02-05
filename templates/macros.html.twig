@@ -1,0 +1,22 @@
+{% macro competences(image, alt, id) %}
+    <div class="card mb-3 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 100px;">
+        <img src="{{ asset('images/' ~ image) }}" class="img-fluid rounded" alt="{{ alt }}">
+        <a type="button" class="stretched-link" data-bs-toggle="modal" data-bs-target="{{ id }}"></a>
+    </div>
+{% endmacro %}
+
+{% macro modalcompetences(titre, description, idmodal) %}
+    <div class="modal fade" id="{{ idmodal }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">{{ titre }}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{ description }}
+            </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
