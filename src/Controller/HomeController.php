@@ -19,4 +19,10 @@ class HomeController extends AbstractController
     {
         return $this->render('competences/index.html.twig');
     }
+
+    #[Route('/projets', name: 'projets')]
+    public function projets(): Response
+    {
+        return $this->render('projets/index.html.twig');
+    }
 }

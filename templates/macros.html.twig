@@ -1,5 +1,5 @@
 {% macro competences(image, alt, id) %}
-    <div class="card mb-3 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 100px;">
+    <div class="card mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 100px;">
         <img src="{{ asset('images/' ~ image) }}" class="img-fluid rounded" alt="{{ alt }}">
         <a type="button" class="stretched-link" data-bs-toggle="modal" data-bs-target="{{ id }}"></a>
     </div>
