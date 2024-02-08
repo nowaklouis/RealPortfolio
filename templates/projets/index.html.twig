@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% import "macros.html.twig" as macros %}
+
+{% block title %}Mes projets{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="d-flex justify-content-evenly flex-wrap">
+        {{ macros.projects("Skill Swap", "skillSwap.png", "logo skillSwap", "https://github.com/nowaklouis/SkillSwap", "Mon projet de passage de titre principalement sous symfony, le but est d'aider les étudiants en mettant en place un moyen de pouvoir se donner les cours entre eux via des inscription a des \"swap\" pour se transmettre leurs \"skills\".")}}
+        {{ macros.projects("Wild Wood", "WildWood.png", "logo wildWood", "https://github.com/nowaklouis/WildWood", "Miniprojet d'utilisation d'une api nommé \"Trefle\" via react ayant pour but de la consultation de plante avec info detaillé et recherche par filtre. But réel, la vente de plante via e-commerce, prochaine refonte pour ajouté de nouvelles connaissances.")}}
+        {{ macros.projects("Portfolio version react", "portfolioreact1.png", "logo portfolio", "https://github.com/nowaklouis/Portfolio", "Mon premier portfolio créée après ma formation en React, servie de base à ce nouveau portfolio , il m'a appris à correctement géré des animations via javascript et une bibliotheque.")}}
+        {{ macros.projects("VTC - Strasbourg", "VTC.png", "logo vtcstrasbourg", "https://github.com/nowaklouis/VTC-Strasbourg", "Projet en groupe de fin de formation, site web servant à la création de trajet de taxi avec possibilitée de payement en ligne, connexion à son compte et consultation d'historique avec interface administrateur.")}}
+        {{ macros.projects("Sherlockation", "Sherlockation.png", "logo sherlockation", "https://github.com/nowaklouis/Sherlockation", "Application créée pendant nôtre hackathon de formation, sujet donné par AWS(amazon) avec pour but une interface de suivie de véhicules(flotte) et gestion d'historique de déplacements, tout ça en sprint de 48h.")}}
+        {{ macros.projects("Wild Food Fact", "wildFoodFact.png", "logo wildFoodFact", "https://github.com/nowaklouis/Wild-Food-Facts", "Phase de test pour nôtre groupe qui avait pour direction la compréhension et l'utilisation du concept d'api ainsi que l'intégration en react et la gestion d'une librairie de composant nommée \"MUI\" pour la forme.")}}
+        {{ macros.projects("Game Of Life", "gameoflife.png", "logo gameOfLife", "https://github.com/nowaklouis/Game-of-Life", "Mon first projet, sujet libre et premiere utilisation d'une combinaison HTML/ CSS/ Javascript, pour au final une copie du célébre jeu de la vie de John Horton Conway qui fonctionne réellement, interactif, je vous le conseil.")}}
+    </div>
+</div>
+{% endblock %}

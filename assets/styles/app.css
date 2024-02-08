@@ -28,3 +28,7 @@ body {
 .backgroundmodal {
   background-color: rgb(0, 92, 0);
 }
+
+.white-label {
+  color: white;
+}
