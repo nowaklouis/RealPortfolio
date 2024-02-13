@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
+{% import "macros.html.twig" as macros %}
 
-{% block title %}Présentation{% endblock %}
+{% block title %}DevNow{% endblock %}
 
 {% block body %}
-<div class="container">
+<div class="container pt-5" id="presentation">
 
-    <div class="d-flex justify-content-center my-5">
+    <div class="d-flex justify-content-center my-5 pt-4" >
         <h1 class="golden text-shadow">Développeur Junior</h1>
     </div>
 
@@ -67,6 +68,104 @@
             </div>
         </div>
     </div>
-    
+    <div class="d-flex justify-content-center my-5">
+        <div>
+            <h1 class="golden text-shadow">Mes compétences: ...en cours
+                <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center my-5">
+        <p class="text-white">"Apprendre le développement web, c'est comme écrire un logiciel infini. Vous apprenez, vous codez, vous résolvez des problèmes, mais la véritable expertise réside dans la reconnaissance que chaque ligne de code n'est 
+        qu'un point de départ. Dans un monde numérique en constante évolution, l'apprentissage est une aventure sans fin. Il faut rester affamé de connaissances, continuer à créer et à innover. Le développement web, c'est une discipline où chaque 
+        site est une nouvelle leçon, chaque bug une opportunité d'amélioration. La clé du succès réside dans une passion inextinguible pour l'apprentissage continu." - Bill Gates</p>
+    </div>
+
+    <div class="d-flex justify-content-evenly flex-wrap-reverse" id="competences">
+        {{ macros.competences("carddocker.png", "logo docker", "#modaldocker")}}
+        {{ macros.competences("cardagile.png", "logo agile", "#modalagile")}}
+        {{ macros.competences("cardbootstrap.png", "logo bootstrap", "#modalbootstrap")}}
+        {{ macros.competences("cardgit.png", "logo git", "#modalgit")}}
+        {{ macros.competences("cardgithub.png", "logo github", "#modalgithub")}}
+        {{ macros.competences("cardreact.png", "logo react", "#modalreact")}}
+        {{ macros.competences("cardnextjs.svg", "logo nextjs", "#modalnextjs")}}
+        {{ macros.competences("cardnodejs.svg", "logo nodejs", "#modalnodejs")}}
+        {{ macros.competences("cardpwa.webp", "logo pwa", "#modalpwa")}}
+        {{ macros.competences("cardphp.png", "logo php", "#modalphp")}}
+        {{ macros.competences("carddoctrine.png", "logo doctrine", "#modaldoctrine")}}
+        {{ macros.competences("cardsymfony.svg", "logo symfony", "#modalsymfony")}}
+        {{ macros.competences("cardmysql.png", "logo mysql", "#modalmysql")}}
+        {{ macros.competences("cardjs.png", "logo javascript", "#modaljs")}}
+        {{ macros.competences("cardtwig.png", "logo twig", "#modaltwig")}}
+        {{ macros.competences("cardcss.png", "logo css", "#modalcss")}}
+        {{ macros.competences("cardhtml.svg", "logo html", "#modalhtml")}}
+    </div>
+
+    <div class="container d-flex justify-content-center my-5">
+        <div class="card mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded">
+        <a type="button" class="stretched-link text-decoration-none golden" href="/cv/nowak_louis_cv.pdf" download>Voici mon CV version PDF</a>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center my-5" id="projets">
+        <div>
+            <h1 class="golden text-shadow">Mes projets multilangages</h1>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-evenly flex-wrap">
+        {{ macros.projects("Skill Swap", "skillSwap.png", "logo skillSwap", "https://github.com/nowaklouis/SkillSwap", "Mon projet de passage de titre principalement sous symfony, le but est d'aider les étudiants en mettant en place un moyen de pouvoir se donner les cours entre eux via des inscription a des \"swap\" pour se transmettre leurs \"skills\".")}}
+        {{ macros.projects("Wild Wood", "WildWood.png", "logo wildWood", "https://github.com/nowaklouis/WildWood", "Miniprojet d'utilisation d'une api nommé \"Trefle\" via react ayant pour but de la consultation de plante avec info detaillé et recherche par filtre. But réel, la vente de plante via e-commerce, prochaine refonte pour ajouté de nouvelles connaissances.")}}
+        {{ macros.projects("Portfolio version react", "portfolioreact1.png", "logo portfolio", "https://github.com/nowaklouis/Portfolio", "Mon premier portfolio créée après ma formation en React, servie de base à ce nouveau portfolio , il m'a appris à correctement géré des animations via javascript et une bibliotheque.")}}
+        {{ macros.projects("VTC - Strasbourg", "VTC.png", "logo vtcstrasbourg", "https://github.com/nowaklouis/VTC-Strasbourg", "Projet en groupe de fin de formation, site web servant à la création de trajet de taxi avec possibilitée de payement en ligne, connexion à son compte et consultation d'historique avec interface administrateur.")}}
+        {{ macros.projects("Sherlockation", "Sherlockation.png", "logo sherlockation", "https://github.com/nowaklouis/Sherlockation", "Application créée pendant nôtre hackathon de formation, sujet donné par AWS(amazon) avec pour but une interface de suivie de véhicules(flotte) et gestion d'historique de déplacements, tout ça en sprint de 48h.")}}
+        {{ macros.projects("Wild Food Fact", "wildFoodFact.png", "logo wildFoodFact", "https://github.com/nowaklouis/Wild-Food-Facts", "Phase de test pour nôtre groupe qui avait pour direction la compréhension et l'utilisation du concept d'api ainsi que l'intégration en react et la gestion d'une librairie de composant nommée \"MUI\" pour la forme.")}}
+        {{ macros.projects("Game Of Life", "gameoflife.png", "logo gameOfLife", "https://github.com/nowaklouis/Game-of-Life", "Mon first projet, sujet libre et premiere utilisation d'une combinaison HTML/ CSS/ Javascript, pour au final une copie du célébre jeu de la vie de John Horton Conway qui fonctionne réellement, interactif, je vous le conseil.")}}
+    </div>
+
+    <div class="d-flex justify-content-center" id="contact">
+        <div class="card mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 500px;">
+            {{ form_start(form) }}
+                <div>
+                    {{ form_errors(form) }}
+                </div>
+
+                <div class="row">
+                    {{ form_row(form.email) }}
+                    {{ form_row(form.sujet) }}
+                </div>
+                <div class="row">
+                    {{ form_row(form.message) }}
+                </div>
+                <div class="d-flex justify-content-center pt-3">
+                    <button type="submit" class="btn btn-warning">Valider</button>
+                </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+
 </div>
+
+{{ macros.modalcompetences("HTML", "Langage de balisage utilisé pour structurer le contenu des pages web. Il permet de définir la structure et l'organisation des informations sur une page.", "modalhtml")}}
+{{ macros.modalcompetences("CSS", "Langage de style utilisé pour la présentation des pages web. Il permet de définir l'apparence et la mise en forme des éléments HTML d'une page.", "modalcss")}}
+{{ macros.modalcompetences("Docker", "Plateforme logicielle pour automatiser le déploiement d'applications dans des conteneurs légers. Elle offre une gestion efficace des environnements de développement.", "modaldocker")}}
+{{ macros.modalcompetences("Méthode Agile", "Approche itérative et incrémentale de gestion de projet favorisant la flexibilité, la collaboration et la livraison rapide de produits de haute qualité.", "modalagile")}}
+{{ macros.modalcompetences("Bootstrap", "Framework CSS open-source facilitant le développement d'interfaces web responsives avec des composants pré-stylisés et des règles de mise en page.", "modalbootstrap")}}
+{{ macros.modalcompetences("GIT", "Système de contrôle de version permettant le suivi des modifications du code source. Il facilite la collaboration entre développeurs et le suivi des évolutions du projet.", "modalgit")}}
+{{ macros.modalcompetences("Github", "Plateforme de développement collaboratif utilisant GIT pour la gestion de version. Elle offre des fonctionnalités telles que le suivi des problèmes et la gestion de projets.", "modalgithub")}}
+{{ macros.modalcompetences("Javascript", "Langage de programmation côté client pour le développement web. Il permet d'ajouter des fonctionnalités interactives et dynamiques aux pages web.", "modaljs")}}
+{{ macros.modalcompetences("MySql", "Système de gestion de bases de données relationnelles. Il offre un stockage efficace et la gestion structurée des données pour les applications web.", "modalmysql")}}
+{{ macros.modalcompetences("Php", "Langage de programmation côté serveur utilisé pour le développement web dynamique. Il facilite la création de pages web interactives et la gestion des bases de données.", "modalphp")}}
+{{ macros.modalcompetences("PhpStorm", "Environnement de développement intégré (IDE) spécialement conçu pour PHP. Il offre des fonctionnalités avancées pour faciliter le développement PHP.", "modalphpstorm")}}
+{{ macros.modalcompetences("Progressive Web App", "Application web offrant une expérience utilisateur similaire à celle des applications natives. Elle utilise des technologies web modernes pour une performance optimale.", "modalpwa")}}
+{{ macros.modalcompetences("React", "Bibliothèque JavaScript pour la construction d'interfaces utilisateur réactives. Elle facilite la création d'interfaces dynamiques et réutilisables.", "modalreact")}}
+{{ macros.modalcompetences("Twig", "Moteur de template pour le langage de programmation PHP. Il simplifie la création de modèles réutilisables et facilite l'intégration avec PHP.", "modaltwig")}}
+{{ macros.modalcompetences("VsCode", "Éditeur de code-source développé par Microsoft. Il offre une interface utilisateur conviviale et de nombreuses extensions pour une expérience de développement personnalisée.", "modalvscode")}}
+{{ macros.modalcompetences("Doctrine", "Bibliothèque de mapping objet-relationnel (ORM) pour PHP. Elle simplifie l'accès et la manipulation des bases de données relationnelles.", "modaldoctrine")}}
+{{ macros.modalcompetences("Nextjs", "Framework React permettant le rendu côté serveur pour des applications web. Il offre une approche moderne pour le développement d'applications web performantes.", "modalnextjs")}}
+{{ macros.modalcompetences("Nodejs", "Environnement d'exécution pour le langage JavaScript côté serveur. Il permet d'exécuter du code JavaScript sur le serveur, facilitant ainsi le développement d'applications web.", "modalnodejs")}}
+{{ macros.modalcompetences("Symfony", "Framework PHP open-source pour le développement web. Il offre une structure modulaire, une architecture MVC et des fonctionnalités puissantes pour créer des applications robustes.", "modalsymfony")}}
 {% endblock %}

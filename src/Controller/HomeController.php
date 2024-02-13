@@ -17,25 +17,7 @@ class HomeController extends AbstractController
     }
 
     #[Route('/', name: 'index')]
-    public function index(): Response
-    {
-        return $this->render('home/index.html.twig');
-    }
-
-    #[Route('/competences', name: 'competences')]
-    public function competences(): Response
-    {
-        return $this->render('competences/index.html.twig');
-    }
-
-    #[Route('/projets', name: 'projets')]
-    public function projets(): Response
-    {
-        return $this->render('projets/index.html.twig');
-    }
-
-    #[Route('/contact', name: 'contact')]
-    public function contact(Request $request): Response
+    public function index(Request $request): Response
     {
         $formData = [];
         $form = $this->createForm(ContactFormType::class, $formData);
@@ -57,7 +39,7 @@ class HomeController extends AbstractController
             return $this->redirectToRoute('homepage');
         }
 
-        return $this->render('contact/index.html.twig', [
+        return $this->render('home/index.html.twig', [
             'form' => $form->createView(),
         ]);
     }
