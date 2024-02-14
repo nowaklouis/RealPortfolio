@@ -21,17 +21,30 @@
     </div>
 {% endmacro %}
 
-{% macro projects(title, image, alt, link, description) %}
-    <div class="card mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 700px;">
-        <div class="d-flex">
-            <img src="{{ asset('images/' ~ image) }}" class="img-fluid rounded" alt="{{ alt }}" style="max-width: 200px;">
-            <div class="p-2 d-flex flex-column justify-content-between">
-                <div>
-                    <p class=" h4 golden">{{ title }}</p>
-                    <p class="white">{{ description }}</p>
-                </div>
-                <a type="button" class="text-decoration-none golden mt-auto" href={{ link }}>Lien du projet sur Github</a>
-            </div>
-        </div>
+{% macro projects(title, image, alt, language, link, description) %}
+<div class="card-project">
+    <div class="card__image-holder">
+      <img class="card__image" src="{{ asset('images/' ~ image) }}" alt="{{ alt }}" />
     </div>
+    <div class="card-title-project">
+      <a href="#" class="toggle-info btn-project">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2 class="h2-project golden">
+          {{ title }}
+          <small>{{ language }}</small>
+      </h2>
+    </div>
+    <div class="card-flap-project flap1">
+      <div class="card-description-project">
+        {{ description }}
+      </div>
+      <div class="card-flap-project flap2">
+        <div class="card-actions-project">
+          <a href="{{ link }}" class="btn-project"><strong>lien github</strong></a>
+        </div>
+      </div>
+    </div>
+</div>
 {% endmacro %}
