@@ -23,26 +23,26 @@
                 <div class="container-fluid">
                     <div class="d-flex">
                         <p class="h3 golden me-3">Nowak Louis</p>
-                        <div>
-                            <a class="navbar-brand" href="https://github.com/nowaklouis"><i class="bi bi-github" style="font-size: 25px; color: rgb(254, 180, 0);"></i></a>
+                        <div class=" icon-perso">
+                            <a class="navbar-brand" href="https://github.com/nowaklouis" target="_blank"><i class="bi bi-github" style="font-size: 25px; color: rgb(254, 180, 0);"></i></a>
                         </div>
-                        <div>
-                            <a class="navbar-brand" href="https://www.linkedin.com/in/louis-nowak/"><i class="bi bi-linkedin" style="font-size: 25px; color: rgb(254, 180, 0);"></i></a>
+                        <div class=" icon-perso">
+                            <a class="navbar-brand" href="https://www.linkedin.com/in/louis-nowak/" target="_blank"><i class="bi bi-linkedin" style="font-size: 25px; color: rgb(254, 180, 0);"></i></a>
                         </div>
                     </div>
                     <div>
                         <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <a class="nav-link bold text-white" href="#presentation"><strong>Présentation</strong></a>
+                            <a class="nav-link text-white btn" data-target="presentation"><strong>Présentation</strong></a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-white" href="#competences"><strong>Compétences</strong></a>
+                            <a class="nav-link text-white btn" data-target="competences"><strong>Compétences</strong></a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-white" href="#projets"><strong>Projets</strong></a>
+                            <a class="nav-link text-white btn" data-target="projets"><strong>Projets</strong></a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-white" href="#contact"><strong>Contact</strong></a>
+                            <a class="nav-link text-white btn" data-target="contact"><strong>Contact</strong></a>
                             </li>
                         </ul>
                     </div>
@@ -50,5 +50,14 @@
             </nav>
         </div>
         {% block body %}{% endblock %}
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex justify-content-end">
+                    <div class="row pt-1">
+                        <p class="text-white">&copy; 2024 - Nowak Louis</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

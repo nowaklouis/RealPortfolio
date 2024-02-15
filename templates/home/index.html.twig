@@ -5,69 +5,72 @@
 
 {% block body %}
 <div class="container pt-5 scrollspy-example"  data-bs-spy="scroll" data-bs-offset="0" tabindex="0">
+    <div  id="presentation">
+        <div class="d-flex justify-content-center my-5 pt-4"  >
+            <h1 class="golden text-shadow">Développeur Junior</h1>
+        </div>
 
-    <div class="d-flex justify-content-center my-5 pt-4" id="presentation" >
-        <h1 class="golden text-shadow">Développeur Junior</h1>
-    </div>
+        <div class="container d-flex justify-content-center my-5">
+            <p class="text-white">Déterminé et pérseverant, j'ai pour but d'allez encore plus loin dans mon apprentissage pour devenir un veritable dev accompli.<br> Veille, scrum et code son devenu une habitude et graçe à ma motivation, je peux desormais pour 
+            proposer mes services en tant que développeur back-end tout en ayant de certaine compétences en front-end.</p>
+        </div>
 
-    <div class="container d-flex justify-content-center my-5">
-        <p class="text-white">Déterminé et pérseverant, j'ai pour but d'allez encore plus loin dans mon apprentissage pour devenir un veritable dev accompli.<br> Veille, scrum et code son devenu une habitude et graçe à ma motivation, je peux desormais pour 
-        proposer mes services en tant que développeur back-end tout en ayant de certaine compétences en front-end.</p>
-    </div>
-
-    <div class="d-flex justify-content-evenly">
-        <div class="card mb-3 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h2 class="card-title text-white propros">À propos de moi ?</h2>
-                        <p class="pt-3 card-text text-white">Ancien paysagiste, ma vie a pris un tournant il y a deux ans lorsque j'ai entrepris une reconversion audacieuse à la Wild Code School. Cette école m'a enseigné les tenants 
-                        et aboutissants du développement web, des langages de programmation aux frameworks modernes. Plus qu'une simple formation technique, elle m'a inculqué des valeurs cruciales telles que la collaboration, 
-                        l'adaptabilité et la résolution de problèmes. </p>
+        <div class="d-flex justify-content-evenly">
+            <div class="card mb-3 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title text-white propros">À propos de moi ?</h2>
+                            <p class="pt-3 card-text text-white">Ancien paysagiste, ma vie a pris un tournant il y a deux ans lorsque j'ai entrepris une reconversion audacieuse à la Wild Code School. Cette école m'a enseigné les tenants 
+                            et aboutissants du développement web, des langages de programmation aux frameworks modernes. Plus qu'une simple formation technique, elle m'a inculqué des valeurs cruciales telles que la collaboration, 
+                            l'adaptabilité et la résolution de problèmes. </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center">
-                    <img src="{{ asset('images/me.jpg') }}" class="img-fluid rounded" alt="...">
-                </div>
-            </div>
-        </div>
-        <div class="mt-5">
-            <img src="{{ asset('images/image-ordi-part1.jpg') }}" class="img-fluid rounded" style="width: 400px; height: auto; opacity: 0.7;" alt="...">
-        </div>
-    </div>
-    <div class="d-flex justify-content-evenly">
-        <div class="mt-5">
-            <img src="{{ asset('images/image-ordi-part1.jpg') }}" class="img-fluid rounded" style="width: 400px; height: auto; opacity: 0.7;" alt="...">
-        </div>
-        <div class="card mb-3 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 540px;">
-            <div class="row g-0">
-                <div >
-                    <div class="card-body">
-                        <h2 class="card-title text-white propros">Plus loin, plus haut !</h2>
-                        <p class="pt-3 card-text text-white">Fraîchement diplômé en développement web et web mobile, équivalent bac+2, ma soif de connaissances persiste. Animé par l'envie de perfectionnement,
-                         je projette de poursuivre mon parcours académique en intégrant une école d'ingénieur pour atteindre le niveau Bac+5. Ma formation intensive a jeté les bases techniques solides, mais je souhaite désormais approfondir 
-                         mes compétences et acquérir une expertise approfondie. Orienté vers une alternance, je vise une immersion professionnelle enrichissante, combinant expérience pratique et enseignement avancé pour atteindre de nouveaux 
-                         sommets dans le domaine du développement informatique.</p>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="{{ asset('images/me.jpg') }}" class="img-fluid rounded" alt="...">
                     </div>
                 </div>
             </div>
+            <div class="mt-5">
+                <img src="{{ asset('images/image-ordi-part1.jpg') }}" class="img-fluid rounded" style="width: 400px; height: auto; opacity: 0.7;" alt="...">
+            </div>
         </div>
-    </div>
-    <div class="d-flex justify-content-center">
-        <div class="card mb-3 p-1 shadow p-3 mb-5 rounded" style="max-width: 540px; background-image: linear-gradient(rgba(10, 63, 15, 0.5), rgba(10, 63, 15, 0.5)), url('{{ asset('images/meonprez.jpg') }}'); background-size: cover;">
-            <div class="row g-0">
-                <div>
-                    <div class="card-body">
-                        <h2 class="card-title text-white propros">Monde professionnel</h2>
-                        <p class="pt-3 card-text text-white">Au cours d'un stage enrichissant de 6 mois au sein d'une entreprise de courtage en assurance, j'ai consolidé mes compétences en développement avec un accent particulier sur le langage Symfony.
-                         Ma polyvalence s'est exprimée dans la création de l'interface utilisateur avec JavaScript et Twig, tout en assurant la robustesse du back-end grâce à Symfony et Doctrine. Au-delà des aspects techniques, j'ai mis en pratique la 
-                         collaboration avec pour base la méthode agile et les scrum au sein de l'équipe. Ce stage a été l'occasion idéale de concrétiser mes connaissances acquises, de perfectionner mes compétences et de démontrer l'importance cruciale 
-                         de la collaboration dans le monde professionnel.</p>
+        <div class="d-flex justify-content-evenly">
+            <div class="mt-5">
+                <img src="{{ asset('images/image-ordi-part1.jpg') }}" class="img-fluid rounded" style="width: 400px; height: auto; opacity: 0.7;" alt="...">
+            </div>
+            <div class="card mb-3 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div >
+                        <div class="card-body">
+                            <h2 class="card-title text-white propros">Plus loin, plus haut !</h2>
+                            <p class="pt-3 card-text text-white">Fraîchement diplômé en développement web et web mobile, équivalent bac+2, ma soif de connaissances persiste. Animé par l'envie de perfectionnement,
+                            je projette de poursuivre mon parcours académique en intégrant une école d'ingénieur pour atteindre le niveau Bac+5. Ma formation intensive a jeté les bases techniques solides, mais je souhaite désormais approfondir 
+                            mes compétences et acquérir une expertise approfondie. Orienté vers une alternance, je vise une immersion professionnelle enrichissante, combinant expérience pratique et enseignement avancé pour atteindre de nouveaux 
+                            sommets dans le domaine du développement informatique.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="d-flex justify-content-center">
+            <div class="card mb-3 p-1 shadow p-3 mb-5 rounded" style="max-width: 540px; background-image: linear-gradient(rgba(10, 63, 15, 0.5), rgba(10, 63, 15, 0.5)), url('{{ asset('images/meonprez.jpg') }}'); background-size: cover;">
+                <div class="row g-0">
+                    <div>
+                        <div class="card-body">
+                            <h2 class="card-title text-white propros">Monde professionnel</h2>
+                            <p class="pt-3 card-text text-white">Au cours d'un stage enrichissant de 6 mois au sein d'une entreprise de courtage en assurance, j'ai consolidé mes compétences en développement avec un accent particulier sur le langage Symfony.
+                            Ma polyvalence s'est exprimée dans la création de l'interface utilisateur avec JavaScript et Twig, tout en assurant la robustesse du back-end grâce à Symfony et Doctrine. Au-delà des aspects techniques, j'ai mis en pratique la 
+                            collaboration avec pour base la méthode agile et les scrum au sein de l'équipe. Ce stage a été l'occasion idéale de concrétiser mes connaissances acquises, de perfectionner mes compétences et de démontrer l'importance cruciale 
+                            de la collaboration dans le monde professionnel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+
     <div class="d-flex justify-content-center my-5">
         <div>
             <h1 class="golden text-shadow">Mes compétences: ...en cours
@@ -105,29 +108,33 @@
     </div>
 
     <div class="container d-flex justify-content-center my-5">
-        <div class="card mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded">
+        <div class="card card-competences mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded">
         <a type="button" class="stretched-link text-decoration-none golden" href="/cv/nowak_louis_cv.pdf" download>Voici mon CV version PDF</a>
         </div>
     </div>
 
-    <div class="d-flex justify-content-center my-5" id="projets">
-        <div>
-            <h1 class="golden text-shadow">Mes projets multilangages</h1>
+    <div id="projets">
+        <div class="d-flex justify-content-center my-5">
+            <div>
+                <h1 class="golden text-shadow">Mes projets multilangages</h1>
+            </div>
+        </div>
+
+        <div class="cards">
+            {{ macros.projects("Skill Swap", "skillSwap.png", "logo skillSwap","Symfony/Twig/MySql", "https://github.com/nowaklouis/SkillSwap", "Mon projet de passage de titre principalement sous symfony, le but est d'aider les étudiants en mettant en place un moyen de pouvoir se donner les cours entre eux via des inscription a des \"swap\" pour se transmettre leurs \"skills\".")}}
+            {{ macros.projects("Wild Wood", "WildWood.png", "logo wildWood", "React/MUI", "https://github.com/nowaklouis/WildWood", "Miniprojet d'utilisation d'une api nommé \"Trefle\" via react ayant pour but de la consultation de plante avec info detaillé et recherche par filtre. But réel, la vente de plante via e-commerce, prochaine refonte pour ajouté de nouvelles connaissances.")}}
+            {{ macros.projects("Portfolio V1", "portfolioreact1.png", "logo portfolio", "React/MUI/Gsap", "https://github.com/nowaklouis/Portfolio", "Mon premier portfolio créée après ma formation en React, servie de base à ce nouveau portfolio , il m'a appris à correctement géré des animations via javascript et une bibliotheque.")}}
+            {{ macros.projects("VTC-Strasbourg", "VTC.png", "logo vtcstrasbourg", "Nextjs/MySql/Node", "https://github.com/nowaklouis/VTC-Strasbourg", "Projet en groupe de fin de formation, site web servant à la création de trajet de taxi avec possibilitée de payement en ligne, connexion à son compte et consultation d'historique avec interface administrateur.")}}
+            {{ macros.projects("Sherlockation", "Sherlockation.png", "logo sherlockation", "Nextjs/MongoDB", "https://github.com/nowaklouis/Sherlockation", "Application créée pendant nôtre hackathon de formation, sujet donné par AWS(amazon) avec pour but une interface de suivie de véhicules(flotte) et gestion d'historique de déplacements, tout ça en sprint de 48h.")}}
+            {{ macros.projects("Wild Food Fact", "wildFoodFact.png", "logo wildFoodFact", "React/MUI", "https://github.com/nowaklouis/Wild-Food-Facts", "Phase de test pour nôtre groupe qui avait pour direction la compréhension et l'utilisation du concept d'api ainsi que l'intégration en react et la gestion d'une librairie de composant nommée \"MUI\" pour la forme.")}}
+            {{ macros.projects("Game Of Life", "gameoflife.png", "logo gameOfLife", "HTML/CSS/Javascript", "https://github.com/nowaklouis/Game-of-Life", "Mon first projet, sujet libre et premiere utilisation d'une combinaison HTML/ CSS/ Javascript, pour au final une copie du célébre jeu de la vie de John Horton Conway qui fonctionne réellement, interactif, je vous le conseil.")}}
         </div>
     </div>
-
-    <div class="cards">
-        {{ macros.projects("Skill Swap", "skillSwap.png", "logo skillSwap","Symfony/Twig/MySql", "https://github.com/nowaklouis/SkillSwap", "Mon projet de passage de titre principalement sous symfony, le but est d'aider les étudiants en mettant en place un moyen de pouvoir se donner les cours entre eux via des inscription a des \"swap\" pour se transmettre leurs \"skills\".")}}
-        {{ macros.projects("Wild Wood", "WildWood.png", "logo wildWood", "React/MUI", "https://github.com/nowaklouis/WildWood", "Miniprojet d'utilisation d'une api nommé \"Trefle\" via react ayant pour but de la consultation de plante avec info detaillé et recherche par filtre. But réel, la vente de plante via e-commerce, prochaine refonte pour ajouté de nouvelles connaissances.")}}
-        {{ macros.projects("Portfolio V1", "portfolioreact1.png", "logo portfolio", "React/MUI/Gsap", "https://github.com/nowaklouis/Portfolio", "Mon premier portfolio créée après ma formation en React, servie de base à ce nouveau portfolio , il m'a appris à correctement géré des animations via javascript et une bibliotheque.")}}
-        {{ macros.projects("VTC-Strasbourg", "VTC.png", "logo vtcstrasbourg", "Nextjs/MySql/Node", "https://github.com/nowaklouis/VTC-Strasbourg", "Projet en groupe de fin de formation, site web servant à la création de trajet de taxi avec possibilitée de payement en ligne, connexion à son compte et consultation d'historique avec interface administrateur.")}}
-        {{ macros.projects("Sherlockation", "Sherlockation.png", "logo sherlockation", "Nextjs/MongoDB", "https://github.com/nowaklouis/Sherlockation", "Application créée pendant nôtre hackathon de formation, sujet donné par AWS(amazon) avec pour but une interface de suivie de véhicules(flotte) et gestion d'historique de déplacements, tout ça en sprint de 48h.")}}
-        {{ macros.projects("Wild Food Fact", "wildFoodFact.png", "logo wildFoodFact", "React/MUI", "https://github.com/nowaklouis/Wild-Food-Facts", "Phase de test pour nôtre groupe qui avait pour direction la compréhension et l'utilisation du concept d'api ainsi que l'intégration en react et la gestion d'une librairie de composant nommée \"MUI\" pour la forme.")}}
-        {{ macros.projects("Game Of Life", "gameoflife.png", "logo gameOfLife", "HTML/CSS/Javascript", "https://github.com/nowaklouis/Game-of-Life", "Mon first projet, sujet libre et premiere utilisation d'une combinaison HTML/ CSS/ Javascript, pour au final une copie du célébre jeu de la vie de John Horton Conway qui fonctionne réellement, interactif, je vous le conseil.")}}
-    </div>
+    
 
     <div class="d-flex justify-content-center" id="contact">
         <div class="card mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded" style="max-width: 500px;">
+            <h2 class="h3 text-white">Pour me contacter, c'est par ici</h2>
             {{ form_start(form) }}
                 <div>
                     {{ form_errors(form) }}

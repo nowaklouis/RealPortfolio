@@ -8,6 +8,22 @@ import "./bootstrap.js";
 import "./styles/app.css";
 
 document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".nav-link");
+  links.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      var target = this.getAttribute("data-target");
+      var targetElement = document.getElementById(target);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   var zindex = 10;
 
   var cardProjects = document.querySelectorAll("div.card-project");
@@ -24,22 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
       var cards = document.querySelector("div.cards");
 
       if (cards.classList.contains("showing")) {
-        // une carte est déjà affichée
         var showingCard = document.querySelector("div.card-project.show");
         showingCard.classList.remove("show");
 
         if (isShowing) {
-          // cette carte était affichée - réinitialiser la grille
           cards.classList.remove("showing");
         } else {
-          // cette carte n'est pas affichée - afficher la
           this.style.zIndex = zindex;
           this.classList.add("show");
         }
 
         zindex++;
       } else {
-        // aucune carte affichée
         cards.classList.add("showing");
         this.style.zIndex = zindex;
         this.classList.add("show");
