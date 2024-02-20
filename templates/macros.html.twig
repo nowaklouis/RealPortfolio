@@ -5,16 +5,19 @@
     </div>
 {% endmacro %}
 
-{% macro modalcompetences(title, description, idmodal) %}
+{% macro modalcompetences(title, description, idmodal, image, alt) %}
     <div class="modal fade" id="{{ idmodal }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header backgroundmodal">
-                <h1 class="modal-title fs-5">{{ title }}</h1>
+                <h1 class="modal-title fs-5 golden">{{ title }}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                {{ description }}
+              <div class="d-flex">
+                <div>{{ description }}</div>
+                <div><img src="{{ asset('images/' ~ image) }}" class="img-fluid rounded" alt="{{ alt }}" style="max-width: 100px;"></div>
+              </div>
             </div>
             </div>
         </div>
@@ -42,7 +45,7 @@
       </div>
       <div class="card-flap-project flap2">
         <div class="card-actions-project">
-          <a href="{{ link }}" target="_blank" class="btn-project"><strong>lien github</strong></a>
+          <a href="{{ link }}" target="_blank" class="link-test btn-project-git" onclick="event.stopPropagation();"><strong>lien github</strong></a>
         </div>
       </div>
     </div>

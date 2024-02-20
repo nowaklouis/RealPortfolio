@@ -71,7 +71,7 @@
     </div>
     
 
-    <div class="d-flex justify-content-center my-5">
+    <div class="d-flex justify-content-center my-5" id="competences">
         <div>
             <h1 class="golden text-shadow">Mes compétences: ...en cours
                 <div class="spinner-border text-warning" role="status">
@@ -87,7 +87,7 @@
         site est une nouvelle leçon, chaque bug une opportunité d'amélioration. La clé du succès réside dans une passion inextinguible pour l'apprentissage continu." - Bill Gates</p>
     </div>
 
-    <div class="d-flex justify-content-evenly flex-wrap-reverse" id="competences">
+    <div class="d-flex justify-content-evenly flex-wrap-reverse">
         {{ macros.competences("carddocker.png", "logo docker", "#modaldocker")}}
         {{ macros.competences("cardagile.png", "logo agile", "#modalagile")}}
         {{ macros.competences("cardbootstrap.png", "logo bootstrap", "#modalbootstrap")}}
@@ -109,7 +109,7 @@
 
     <div class="container d-flex justify-content-center my-5">
         <div class="card card-competences mb-3 mx-2 p-1 cardpresent shadow p-3 mb-5 rounded">
-        <a type="button" class="stretched-link text-decoration-none golden" href="/cv/nowak_louis_cv.pdf" download>Voici mon CV version PDF</a>
+        <a type="button" class="stretched-link text-decoration-none golden" href="/cv/nowak_louis_cv.pdf" target="_blank">Voici mon CV version PDF</a>
         </div>
     </div>
 
@@ -156,23 +156,21 @@
 
 </div>
 
-{{ macros.modalcompetences("HTML", "Langage de balisage utilisé pour structurer le contenu des pages web. Il permet de définir la structure et l'organisation des informations sur une page.", "modalhtml")}}
-{{ macros.modalcompetences("CSS", "Langage de style utilisé pour la présentation des pages web. Il permet de définir l'apparence et la mise en forme des éléments HTML d'une page.", "modalcss")}}
-{{ macros.modalcompetences("Docker", "Plateforme logicielle pour automatiser le déploiement d'applications dans des conteneurs légers. Elle offre une gestion efficace des environnements de développement.", "modaldocker")}}
-{{ macros.modalcompetences("Méthode Agile", "Approche itérative et incrémentale de gestion de projet favorisant la flexibilité, la collaboration et la livraison rapide de produits de haute qualité.", "modalagile")}}
-{{ macros.modalcompetences("Bootstrap", "Framework CSS open-source facilitant le développement d'interfaces web responsives avec des composants pré-stylisés et des règles de mise en page.", "modalbootstrap")}}
-{{ macros.modalcompetences("GIT", "Système de contrôle de version permettant le suivi des modifications du code source. Il facilite la collaboration entre développeurs et le suivi des évolutions du projet.", "modalgit")}}
-{{ macros.modalcompetences("Github", "Plateforme de développement collaboratif utilisant GIT pour la gestion de version. Elle offre des fonctionnalités telles que le suivi des problèmes et la gestion de projets.", "modalgithub")}}
-{{ macros.modalcompetences("Javascript", "Langage de programmation côté client pour le développement web. Il permet d'ajouter des fonctionnalités interactives et dynamiques aux pages web.", "modaljs")}}
-{{ macros.modalcompetences("MySql", "Système de gestion de bases de données relationnelles. Il offre un stockage efficace et la gestion structurée des données pour les applications web.", "modalmysql")}}
-{{ macros.modalcompetences("Php", "Langage de programmation côté serveur utilisé pour le développement web dynamique. Il facilite la création de pages web interactives et la gestion des bases de données.", "modalphp")}}
-{{ macros.modalcompetences("PhpStorm", "Environnement de développement intégré (IDE) spécialement conçu pour PHP. Il offre des fonctionnalités avancées pour faciliter le développement PHP.", "modalphpstorm")}}
-{{ macros.modalcompetences("Progressive Web App", "Application web offrant une expérience utilisateur similaire à celle des applications natives. Elle utilise des technologies web modernes pour une performance optimale.", "modalpwa")}}
-{{ macros.modalcompetences("React", "Bibliothèque JavaScript pour la construction d'interfaces utilisateur réactives. Elle facilite la création d'interfaces dynamiques et réutilisables.", "modalreact")}}
-{{ macros.modalcompetences("Twig", "Moteur de template pour le langage de programmation PHP. Il simplifie la création de modèles réutilisables et facilite l'intégration avec PHP.", "modaltwig")}}
-{{ macros.modalcompetences("VsCode", "Éditeur de code-source développé par Microsoft. Il offre une interface utilisateur conviviale et de nombreuses extensions pour une expérience de développement personnalisée.", "modalvscode")}}
-{{ macros.modalcompetences("Doctrine", "Bibliothèque de mapping objet-relationnel (ORM) pour PHP. Elle simplifie l'accès et la manipulation des bases de données relationnelles.", "modaldoctrine")}}
-{{ macros.modalcompetences("Nextjs", "Framework React permettant le rendu côté serveur pour des applications web. Il offre une approche moderne pour le développement d'applications web performantes.", "modalnextjs")}}
-{{ macros.modalcompetences("Nodejs", "Environnement d'exécution pour le langage JavaScript côté serveur. Il permet d'exécuter du code JavaScript sur le serveur, facilitant ainsi le développement d'applications web.", "modalnodejs")}}
-{{ macros.modalcompetences("Symfony", "Framework PHP open-source pour le développement web. Il offre une structure modulaire, une architecture MVC et des fonctionnalités puissantes pour créer des applications robustes.", "modalsymfony")}}
+{{ macros.modalcompetences("HTML", "Langage de balisage utilisé pour structurer le contenu des pages web. Il permet de définir la structure et l'organisation des informations sur une page.", "modalhtml", "cardhtml.svg", "logo html")}}
+{{ macros.modalcompetences("CSS", "Langage de style utilisé pour la présentation des pages web. Il permet de définir l'apparence et la mise en forme des éléments HTML d'une page.", "modalcss", "cardcss.png", "logo css")}}
+{{ macros.modalcompetences("Docker", "Plateforme logicielle pour automatiser le déploiement d'applications dans des conteneurs légers. Elle offre une gestion efficace des environnements de développement.", "modaldocker", "carddocker.png", "logo docker")}}
+{{ macros.modalcompetences("Méthode Agile", "Approche itérative et incrémentale de gestion de projet favorisant la flexibilité, la collaboration et la livraison rapide de produits de haute qualité.", "modalagile", "cardagile.png", "logo agile")}}
+{{ macros.modalcompetences("Bootstrap", "Framework CSS open-source facilitant le développement d'interfaces web responsives avec des composants pré-stylisés et des règles de mise en page.", "modalbootstrap", "cardbootstrap.png", "logo bootstrap")}}
+{{ macros.modalcompetences("GIT", "Système de contrôle de version permettant le suivi des modifications du code source. Il facilite la collaboration entre développeurs et le suivi des évolutions du projet.", "modalgit", "cardgit.png", "logo git")}}
+{{ macros.modalcompetences("Github", "Plateforme de développement collaboratif utilisant GIT pour la gestion de version. Elle offre des fonctionnalités telles que le suivi des problèmes et la gestion de projets.", "modalgithub", "cardgithub.png", "logo github")}}
+{{ macros.modalcompetences("Javascript", "Langage de programmation côté client pour le développement web. Il permet d'ajouter des fonctionnalités interactives et dynamiques aux pages web.", "modaljs", "cardjs.png", "logo javascript")}}
+{{ macros.modalcompetences("MySql", "Système de gestion de bases de données relationnelles. Il offre un stockage efficace et la gestion structurée des données pour les applications web.", "modalmysql", "cardmysql.png", "logo mysql")}}
+{{ macros.modalcompetences("Php", "Langage de programmation côté serveur utilisé pour le développement web dynamique. Il facilite la création de pages web interactives et la gestion des bases de données.", "modalphp", "cardphp.png", "logo php")}}
+{{ macros.modalcompetences("Progressive Web App", "Application web offrant une expérience utilisateur similaire à celle des applications natives. Elle utilise des technologies web modernes pour une performance optimale.", "modalpwa", "cardpwa.webp", "logo pwa")}}
+{{ macros.modalcompetences("React", "Bibliothèque JavaScript pour la construction d'interfaces utilisateur réactives. Elle facilite la création d'interfaces dynamiques et réutilisables.", "modalreact", "cardreact.png", "logo react")}}
+{{ macros.modalcompetences("Twig", "Moteur de template pour le langage de programmation PHP. Il simplifie la création de modèles réutilisables et facilite l'intégration avec PHP.", "modaltwig", "cardtwig.png", "logo twig")}}
+{{ macros.modalcompetences("Doctrine", "Bibliothèque de mapping objet-relationnel (ORM) pour PHP. Elle simplifie l'accès et la manipulation des bases de données relationnelles.", "modaldoctrine", "carddoctrine.png", "logo doctrine")}}
+{{ macros.modalcompetences("Nextjs", "Framework React permettant le rendu côté serveur pour des applications web. Il offre une approche moderne pour le développement d'applications web performantes.", "modalnextjs", "cardnextjs.svg", "logo nextjs")}}
+{{ macros.modalcompetences("Nodejs", "Environnement d'exécution pour le langage JavaScript côté serveur. Il permet d'exécuter du code JavaScript sur le serveur, facilitant ainsi le développement d'applications web.", "modalnodejs", "cardnodejs.svg", "logo nodejs")}}
+{{ macros.modalcompetences("Symfony", "Framework PHP open-source pour le développement web. Il offre une structure modulaire, une architecture MVC et des fonctionnalités puissantes pour créer des applications robustes.", "modalsymfony", "cardsymfony.svg", "logo symfony")}}
 {% endblock %}
