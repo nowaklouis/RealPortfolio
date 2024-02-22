@@ -304,3 +304,21 @@ div.card-project.show {
 .modal-content {
   margin: auto;
 }
+
+@media screen and (min-width: 1220px) {
+  .responsive2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .responsive1 {
+    display: none;
+  }
+
+  .cardpresent {
+    background-image: url('{{ asset("images/me.jpg") }}');
+    background-size: cover;
+    background-position: center;
+  }
+}
