@@ -60,15 +60,24 @@ document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector(".navbar-collapse");
 
   document.addEventListener("click", function (event) {
+    console.log("Clic détecté");
     var isClickInsideNavbar = navbar.contains(event.target);
     var isNavbarTogglerClicked = event.target.closest(".navbar-toggler");
 
+    console.log("Clic à l'intérieur de la navbar : " + isClickInsideNavbar);
+    console.log("Clic sur le navbar-toggler : " + isNavbarTogglerClicked);
+
+    // Si le clic est en dehors de la barre de navigation et que la barre de navigation est ouverte
     if (
       !isClickInsideNavbar &&
       !isNavbarTogglerClicked &&
       navbar.classList.contains("show")
     ) {
+      console.log("Fermeture de la navbar");
+      // Ferme la barre de navigation
       document.querySelector(".navbar-toggler").click();
     }
   });
 });
+
+console.log("ositjojtreo");
