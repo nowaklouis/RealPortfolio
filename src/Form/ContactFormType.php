@@ -46,8 +46,7 @@ class ContactFormType extends AbstractType
             ])
             ->add('captcha', Recaptcha3Type::class, [
                 'constraints' => new Recaptcha3(),
-                'action_name' => 'index',
-                'hide_badge' => true,
+                'action_name' => 'index'
             ]);
     }
 

@@ -6,7 +6,7 @@
     "app.js": "\/assets\/app-9e81c091f8545c77480ea30607560721.js",
     "bootstrap.js": "\/assets\/bootstrap-c423b8bbc1f9cae218c105ca8ca9f767.js",
     "controllers\/hello_controller.js": "\/assets\/controllers\/hello_controller-55882fcad241d2bea50276ea485583bc.js",
-    "styles\/app.css": "\/assets\/styles\/app-d21f2abc4aa288ae1ef50b86c1122683.css",
+    "styles\/app.css": "\/assets\/styles\/app-f2d28a3dc8b9731ccc27511f36b20a09.css",
     "vendor\/@hotwired\/stimulus\/stimulus.index.js": "\/assets\/vendor\/@hotwired\/stimulus\/stimulus.index-b5b1d00e42695b8959b4a1e94e3bc92a.js",
     "vendor\/@hotwired\/turbo\/turbo.index.js": "\/assets\/vendor\/@hotwired\/turbo\/turbo.index-810f44ef1a202a441e4866b7a4c72d11.js",
     "vendor\/@popperjs\/core\/core.index.js": "\/assets\/vendor\/@popperjs\/core\/core.index-ceb5b6c0f9e1d3f6c78ef733facfdcda.js",
